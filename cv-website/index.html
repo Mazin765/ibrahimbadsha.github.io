@@ -9,10 +9,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-
-  <!-- JS Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -40,10 +36,10 @@
   <!-- About -->
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <img src="assets/me.jpg" alt="Ibrahim Badsha" class="profile-photo" />
+    <img src="assets/me.jpg" alt="Ibrahim Badsha" class="profile-photo">
     <p>
       Aspiring Data Analyst with a strong foundation in programming, machine learning, and data visualization. 
-      Skilled in Python, SQL, Power BI, and Excel to draw insights from data. 
+      Skilled in using Python, SQL, Power BI, and Excel to draw insights from data. 
       Quick learner and team player, eager to contribute to impactful, data-driven projects.
     </p>
   </section>
@@ -117,14 +113,12 @@
     <p>© 2025 Ibrahim Badsha | Built with ❤️</p>
   </footer>
 
- <!-- <script src="script.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    AOS.init();
-  });
-</script> -->
-
-
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.AOS) AOS.init();
+    });
+  </script>
 </body>
 </html>
-
