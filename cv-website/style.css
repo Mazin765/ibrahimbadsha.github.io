@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #0d1117;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background: #161b22;
+  z-index: 1000;
+}
+nav .logo {
+  font-size: 1.5rem;
+  color: #58a6ff;
+}
+nav .logo span { color: #fff; }
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #58a6ff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #58a6ff;
+}
+.hero .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #58a6ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.hero .btn:hover { background: #1f6feb; }
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+h2 {
+  margin-bottom: 20px;
+  color: #58a6ff;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+.skill {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+.skill:hover { transform: translateY(-5px); background: #1f6feb; }
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.project-card:hover { transform: scale(1.05); background: #1f6feb; }
+
+/* Footer */
+footer {
+  background: #161b22;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;   /* makes it round */
+  display: block;
+  margin: 20px auto;    /* centers it */
+  border: 3px solid #58a6ff;
+}
