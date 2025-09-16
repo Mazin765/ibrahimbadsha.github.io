@@ -1,4 +1,3 @@
-// Typing animation effect
 document.addEventListener('DOMContentLoaded', () => {
   // Typing animation effect
   const typing = document.querySelector('.typing');
@@ -17,4 +16,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   typeEffect();
 });
-
