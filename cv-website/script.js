@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Typing animation effect
   const typing = document.querySelector('.typing');
-  if (!typing) return; // safety check
+  if (!typing) return; // stop if element not found
 
   const text = typing.textContent;
   typing.textContent = '';
@@ -14,5 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(typeEffect, 120);
     }
   }
+
   typeEffect();
 });
+
+
